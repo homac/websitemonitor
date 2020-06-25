@@ -6,7 +6,7 @@ It comprises of two parts:
 
   1. The producer tries to fetch a website at regular intervals, and posts the result including HTTP response code and response time to a kafka topic. 
 
-  2. The consumer listens for messages on that kafka topic and writes the content of that message to a PostgrSQL database.
+  2. The consumer listens for messages on that kafka topic and writes the content of that message to a PostgresSQL database.
 
 Both tools can be configured and ran independently.
 
@@ -15,7 +15,7 @@ Disclaimer: Before running the tools, both a kafka and postgresql service must a
 ### Usage
 
 #### Configuration
-Configure the interface to kafka (kafka.ini), the producer (poducer.ini) and the consumer (consumer.ini). For kafka, the same config file can be used. You also need ssl certificates for access to the kafka service and configure their location in the kafka config file. Templates can be found in the config/ directory.
+Configure the interface to kafka (kafka.ini), the producer (producer.ini) and the consumer (consumer.ini). For kafka, the same config file can be used. You also need ssl certificates for access to the kafka service and configure their location in the kafka config file. Templates can be found in the config/ directory.
 
 Then initialize the python environment:
 
